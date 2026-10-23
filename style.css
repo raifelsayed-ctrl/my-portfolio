@@ -604,25 +604,24 @@ h3 {
     transition: none;
   }
 }
-<head>
-  <!-- Existing head content -->
+<style>
+  /* Live Demo Button */
+  .demo-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #4361ee;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
 
-  <style>
-    .demo-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #4361ee;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+  .demo-button:hover {
+    background: #3046c5;
+    transform: translateY(-2px);
+  }
+</style>
 
-    .demo-button:hover {
-      background: #3046c5;
-      transform: translateY(-2px);
-    }
-  </style>
-</head>
+
