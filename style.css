@@ -623,3 +623,132 @@ h3 {
   color: white;
   transform: translateY(-2px);
 }
+
+
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+  background: var(--soft);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.skill-card {
+  min-width: 0;
+  padding: 26px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(23, 32, 51, .07);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background: #edf1ff;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.skill-card h3 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -.5px;
+}
+
+/* Skill Tags */
+
+.skill-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill-card .tags span {
+  display: inline-block;
+  padding: 7px 11px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Languages */
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.language-item:last-child {
+  border-bottom: none;
+}
+
+.language-level {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Skills Responsive Layout */
+
+@media (max-width: 850px) {
+  .skills-grid {
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 22px;
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+  }
+}
