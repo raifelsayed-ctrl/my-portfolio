@@ -603,27 +603,34 @@ h3 {
    LIVE DEMO BUTTON
 ========================= */
 
+
+/* Live Demo Button */
+
 .demo-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   padding: 12px 24px;
-  background: var(--blue);
-  color: var(--white);
-  border: 1px solid var(--blue);
-  border-radius: 9px;
-  font-weight: 700;
+  background: #3158d8;
+  color: #ffffff !important;
+  border: 1px solid #3158d8;
+  border-radius: 10px;
   font-size: 14px;
+  font-weight: 700;
   text-decoration: none;
-  transition: background .25s ease, transform .25s ease,
-              border-color .25s ease;
+  box-shadow: 0 4px 12px rgba(49, 88, 216, 0.15);
+  transition: all 0.25s ease;
 }
 
 .demo-button:hover {
-  background: var(--blue-hover);
-  border-color: var(--blue-hover);
-  color: var(--white);
+  background: #2546b8;
+  border-color: #2546b8;
+  color: #ffffff !important;
   transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(49, 88, 216, 0.22);
 }
+
 
 /* =========================
    FOOTER
