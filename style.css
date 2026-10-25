@@ -604,31 +604,24 @@ h3 {
 ========================= */
 
 
-/* Live Demo Button */
+/* Force Live Demo button colors */
 
-.demo-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #3158d8;
+a.demo-button,
+a.demo-button:link,
+a.demo-button:visited {
+  background-color: #3158d8 !important;
   color: #ffffff !important;
-  border: 1px solid #3158d8;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(49, 88, 216, 0.15);
-  transition: all 0.25s ease;
+  border: 1px solid #3158d8 !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px rgba(49, 88, 216, 0.15) !important;
 }
 
-.demo-button:hover {
-  background: #2546b8;
-  border-color: #2546b8;
+a.demo-button:hover,
+a.demo-button:focus {
+  background-color: #2546b8 !important;
   color: #ffffff !important;
-  transform: translateY(-2px);
-  box-shadow: 0 7px 18px rgba(49, 88, 216, 0.22);
+  border-color: #2546b8 !important;
 }
 
 
