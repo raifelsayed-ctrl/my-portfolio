@@ -1,1 +1,446 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="HELIXDESK — internal IT support management system by Raif El Sayed."><title>HELIXDESK | Raif El Sayed</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body class="helix-page"><div class="cursor-glow" aria-hidden="true"></div><div class="progress" aria-hidden="true"></div><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html#home">Raif<span>.</span><small> / portfolio</small></a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button><nav aria-label="Main navigation"><a href="index.html#home">Home</a><a href="index.html#skills">Skills</a><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a></nav><a class="nav-cta" href="RaifELSayed.pdf" target="_blank" rel="noopener">View CV ↗</a></div></header><main class="container project-page"><a class="back-link" href="index.html#projects">← Back to Projects</a><section class="helix-intro reveal"><div class="helix-overline"><span class="live-dot"></span> 04 / FEATURED PROJECT <span class="helix-divider">/</span> INTERNAL IT / EMPLOYEE SUPPORT</div><h1>HELIX<span>DESK</span><em>.</em></h1><p class="helix-kicker">IT SUPPORT MANAGEMENT SYSTEM</p><h2>IT Support,<br><span>Made Simple.</span></h2><p class="project-description">A centralized platform for employees to report technical issues, request IT assistance, and track the progress of their support tickets.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML &amp; CSS</span><span>Role-Based Access</span></div><div class="actions"><a class="button primary" href="https://helixdesk.infinityfreeapp.com" target="_blank" rel="noopener noreferrer">Launch Live Demo ↗</a><a class="button secondary" href="#overview">Explore the System ↓</a></div></section><section class="helix-showcase reveal"><div class="visual-bar"><span class="visual-dots">● ● ●</span><span>HELIXDESK / OPERATIONS PLATFORM</span><span>LIVE PROJECT ↗</span></div><button type="button" class="showcase-image" aria-label="Enlarge HELIXDESK dashboard screenshot" onclick="document.getElementById('lightbox').showModal()"><img src="helixdesk-dashboard.jpg" alt="HELIXDESK dashboard showing total tickets, open requests, progress, and SLA metrics"></button><div class="showcase-footer"><span>01 / Submit a request.</span><span>02 / Track its progress.</span><span>03 / Get support.</span></div></section><section id="overview" class="project-content helix-overview"><p class="eyebrow">01 / THE PLATFORM</p><h2>Internal IT Service Desk<span class="accent-dot">.</span></h2><p>HELIXDESK is an internal IT support management system designed to organize employee support requests in one central workspace. Employees can submit issues and follow their tickets, while support teams can manage and respond to requests through a dedicated dashboard.</p><p class="eyebrow helix-feature-label">02 / KEY CAPABILITIES</p><div class="features-grid"><article class="feature-card"><span class="feature-index">01 /</span><h3>Ticket Submission</h3><p>Employees can create support requests and describe technical issues.</p></article><article class="feature-card"><span class="feature-index">02 /</span><h3>Ticket Tracking</h3><p>Monitor requests through clear ticket statuses and activity views.</p></article><article class="feature-card"><span class="feature-index">03 /</span><h3>Support Workspace</h3><p>A central place for support staff to view and handle incoming tickets.</p></article><article class="feature-card"><span class="feature-index">04 /</span><h3>Role-Based Experience</h3><p>Dedicated workflows for administrators, support staff, and employees.</p></article><article class="feature-card"><span class="feature-index">05 /</span><h3>Dashboard Overview</h3><p>Quickly see ticket totals, open requests, work in progress, and overdue requests.</p></article><article class="feature-card"><span class="feature-index">06 /</span><h3>Request Priorities</h3><p>Distinguish high-priority issues and keep support work organized.</p></article></div></section><section class="helix-endcap reveal"><p class="eyebrow">03 / EXPLORE THE PROJECT</p><h2>See HELIXDESK<br><em>in action.</em></h2><p>Explore the live IT support platform and its ticket management interface.</p><a class="button primary" href="https://helixdesk.infinityfreeapp.com" target="_blank" rel="noopener noreferrer">Open Live Website ↗</a></section></main><dialog id="lightbox" class="lightbox" aria-label="HELIXDESK screenshot viewer"><button class="lightbox-close" data-close aria-label="Close image viewer">✕</button><img src="helixdesk-dashboard.jpg" alt="Enlarged HELIXDESK dashboard"><div class="lightbox-controls"><button data-close-bottom>Close</button></div></dialog><footer class="site-footer"><div class="container footer-inner"><span>© 2026 Raif El Sayed</span><a href="index.html#projects">BACK TO PROJECTS ↑</a></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
+        name="description"
+        content="HELIXDESK — internal IT support management system by Raif El Sayed."
+    >
+
+    <title>HELIXDESK | Raif El Sayed</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="helix-page">
+
+    <!-- ========================================
+         BACKGROUND EFFECTS
+    ========================================= -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"></div>
+
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ========================================= -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+
+            <!-- Logo -->
+            <a class="brand" href="index.html#home">
+                Raif<span>.</span>
+                <small> / portfolio</small>
+            </a>
+
+            <!-- Mobile Menu -->
+            <button
+                class="menu-toggle"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <!-- Navigation -->
+            <nav aria-label="Main navigation">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+
+            <!-- CV Button -->
+            <a
+                class="nav-cta"
+                href="RaifELSayed.pdf"
+                target="_blank"
+                rel="noopener"
+            >
+                View CV ↗
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- ========================================
+         MAIN PROJECT PAGE
+    ========================================= -->
+    <main class="container project-page">
+
+        <!-- Back Link -->
+        <a class="back-link" href="index.html#projects">
+            ← Back to Projects
+        </a>
+
+
+        <!-- ========================================
+             01 / HELIXDESK INTRODUCTION
+        ========================================= -->
+        <section class="helix-intro reveal">
+
+            <!-- Project Label -->
+            <div class="helix-overline">
+
+                <span class="live-dot"></span>
+
+                04 / FEATURED PROJECT
+
+                <span class="helix-divider">/</span>
+
+                INTERNAL IT / EMPLOYEE SUPPORT
+
+            </div>
+
+            <!-- Project Name -->
+            <h1>
+                HELIX<span>DESK</span><em>.</em>
+            </h1>
+
+            <p class="helix-kicker">
+                IT SUPPORT MANAGEMENT SYSTEM
+            </p>
+
+            <!-- Main Heading -->
+            <h2>
+                IT Support,<br>
+                <span>Made Simple.</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="project-description">
+                A centralized platform for employees to report
+                technical issues, request IT assistance, and track
+                the progress of their support tickets.
+            </p>
+
+            <!-- Technologies -->
+            <div class="tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>HTML &amp; CSS</span>
+                <span>Role-Based Access</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+
+                <a
+                    class="button primary"
+                    href="https://helixdesk.infinityfreeapp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Launch Live Demo ↗
+                </a>
+
+                <a
+                    class="button secondary"
+                    href="#overview"
+                >
+                    Explore the System ↓
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             02 / PROJECT SHOWCASE
+        ========================================= -->
+        <section class="helix-showcase reveal">
+
+            <!-- Browser-Style Header -->
+            <div class="visual-bar">
+
+                <span class="visual-dots">
+                    ● ● ●
+                </span>
+
+                <span>
+                    HELIXDESK / OPERATIONS PLATFORM
+                </span>
+
+                <span>
+                    LIVE PROJECT ↗
+                </span>
+
+            </div>
+
+
+            <!-- Dashboard Screenshot -->
+            <button
+                type="button"
+                class="showcase-image"
+                aria-label="Enlarge HELIXDESK dashboard screenshot"
+                onclick="document.getElementById('lightbox').showModal()"
+            >
+
+                <img
+                    src="helixdesk-dashboard.jpg"
+                    alt="HELIXDESK dashboard showing total tickets, open requests, progress, and SLA metrics"
+                >
+
+            </button>
+
+
+            <!-- Showcase Footer -->
+            <div class="showcase-footer">
+
+                <span>
+                    01 / Submit a request.
+                </span>
+
+                <span>
+                    02 / Track its progress.
+                </span>
+
+                <span>
+                    03 / Get support.
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             03 / PLATFORM OVERVIEW
+        ========================================= -->
+        <section
+            id="overview"
+            class="project-content helix-overview"
+        >
+
+            <!-- Overview Heading -->
+            <p class="eyebrow">
+                01 / THE PLATFORM
+            </p>
+
+            <h2>
+                Internal IT Service Desk<span class="accent-dot">.</span>
+            </h2>
+
+            <!-- Overview Description -->
+            <p>
+                HELIXDESK is an internal IT support management system
+                designed to organize employee support requests in one
+                central workspace. Employees can submit issues and
+                follow their tickets, while support teams can manage
+                and respond to requests through a dedicated dashboard.
+            </p>
+
+
+            <!-- ====================================
+                 KEY CAPABILITIES
+            ===================================== -->
+            <p class="eyebrow helix-feature-label">
+                02 / KEY CAPABILITIES
+            </p>
+
+
+            <div class="features-grid">
+
+                <!-- Feature 01 -->
+                <article class="feature-card">
+
+                    <span class="feature-index">01 /</span>
+
+                    <h3>Ticket Submission</h3>
+
+                    <p>
+                        Employees can create support requests
+                        and describe technical issues.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 02 -->
+                <article class="feature-card">
+
+                    <span class="feature-index">02 /</span>
+
+                    <h3>Ticket Tracking</h3>
+
+                    <p>
+                        Monitor requests through clear ticket
+                        statuses and activity views.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 03 -->
+                <article class="feature-card">
+
+                    <span class="feature-index">03 /</span>
+
+                    <h3>Support Workspace</h3>
+
+                    <p>
+                        A central place for support staff to
+                        view and handle incoming tickets.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 04 -->
+                <article class="feature-card">
+
+                    <span class="feature-index">04 /</span>
+
+                    <h3>Role-Based Experience</h3>
+
+                    <p>
+                        Dedicated workflows for administrators,
+                        support staff, and employees.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 05 -->
+                <article class="feature-card">
+
+                    <span class="feature-index">05 /</span>
+
+                    <h3>Dashboard Overview</h3>
+
+                    <p>
+                        Quickly see ticket totals, open requests,
+                        work in progress, and overdue requests.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 06 -->
+                <article class="feature-card">
+
+                    <span class="feature-index">06 /</span>
+
+                    <h3>Request Priorities</h3>
+
+                    <p>
+                        Distinguish high-priority issues and
+                        keep support work organized.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             04 / PROJECT CALL TO ACTION
+        ========================================= -->
+        <section class="helix-endcap reveal">
+
+            <p class="eyebrow">
+                03 / EXPLORE THE PROJECT
+            </p>
+
+            <h2>
+                See HELIXDESK<br>
+                <em>in action.</em>
+            </h2>
+
+            <p>
+                Explore the live IT support platform
+                and its ticket management interface.
+            </p>
+
+            <a
+                class="button primary"
+                href="https://helixdesk.infinityfreeapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Live Website ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         IMAGE LIGHTBOX / MODAL
+    ========================================= -->
+    <dialog
+        id="lightbox"
+        class="lightbox"
+        aria-label="HELIXDESK screenshot viewer"
+    >
+
+        <!-- Close Button -->
+        <button
+            class="lightbox-close"
+            data-close
+            aria-label="Close image viewer"
+        >
+            ✕
+        </button>
+
+        <!-- Enlarged Image -->
+        <img
+            src="helixdesk-dashboard.jpg"
+            alt="Enlarged HELIXDESK dashboard"
+        >
+
+        <!-- Bottom Controls -->
+        <div class="lightbox-controls">
+
+            <button data-close-bottom>
+                Close
+            </button>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <span>
+                © 2026 Raif El Sayed
+            </span>
+
+            <a href="index.html#projects">
+                BACK TO PROJECTS ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
